@@ -45,14 +45,14 @@ class Var(metaclass=LVarType):
         """
         if token is None:
             token = f"{prefix}_{Var._id}"
-            cls._id += 1
+            Var._id += 1
 
-        obj = cls._refs.get(token, None)
+        obj = Var._refs.get(token, None)
 
         if obj is None:
             obj = object.__new__(cls)
             obj.token = token
-            cls._refs[token] = obj
+            Var._refs[token] = obj
 
         return obj
 

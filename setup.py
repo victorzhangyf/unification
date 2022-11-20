@@ -7,10 +7,11 @@ import versioneer
 
 setup(
     name="logical-unification",
-    version=versioneer.get_version(),
+    version="0.4.2",
+    # version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     description="Logical unification in Python",
-    url="http://github.com/pythological/unification/",
+    url="https://github.com/victorzhangyf/unification",
     maintainer="Brandon T. Willard",
     maintainer_email="brandonwillard+unification@gmail.com",
     license="BSD",
